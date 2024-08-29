@@ -45,6 +45,10 @@ loom {
     }
 }
 
+repositories {
+    maven("https://thedarkcolour.github.io/KotlinForForge/")
+}
+
 dependencies {
     if ((project.properties["use_neoforge"] as String).toBoolean())
         forge("net.neoforged:forge:$minecraftVersion-${project.properties["neoforge_version"]}")
@@ -52,6 +56,17 @@ dependencies {
 
     "common"(project(":common", "namedElements")) { isTransitive = false }
     "shadowBundle"(project(":common", "transformProductionForge"))
+
+    modRuntimeOnly("me.djtheredstoner:DevAuth-forge-latest:${project.properties["devauth_version"]}")
+
+    // Generations-Core Forge
+    modImplementation("generations.gg.generations.core:Generations-Core-Forge:${project.properties["generations-core_version"]}")
+    modRuntimeOnly("dev.architectury:architectury-forge:${project.properties["architectury_version"]}")
+    modRuntimeOnly("earth.terrarium.botarium:botarium-forge-${minecraftVersion}:${project.properties["botarium_version"]}")
+
+    //Cobblemon
+    implementation("thedarkcolour:kotlinforforge:4.11.0")
+    modApi("com.cobblemon:forge:${project.properties["cobblemon_version"]}")
 }
 
 tasks {

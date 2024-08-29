@@ -37,6 +37,17 @@ dependencies {
 
     "common"(project(":common", "namedElements")) { isTransitive = false }
     "shadowBundle"(project(":common", "transformProductionFabric"))
+
+    modRuntimeOnly("me.djtheredstoner:DevAuth-fabric:${project.properties["devauth_version"]}")
+
+    // Generations-Core Fabric
+    modImplementation("generations.gg.generations.core:Generations-Core-Fabric:${project.properties["generations-core_version"]}")
+    modRuntimeOnly("dev.architectury:architectury-fabric:${project.properties["architectury_version"]}")
+    modRuntimeOnly("earth.terrarium.botarium:botarium-fabric-${minecraftVersion}:${project.properties["botarium_version"]}")
+
+    //Cobblemon
+    modApi("com.cobblemon:fabric:${project.properties["cobblemon_version"]}")
+    modRuntimeOnly("net.fabricmc:fabric-language-kotlin:1.12.1+kotlin.2.0.20")
 }
 
 tasks {

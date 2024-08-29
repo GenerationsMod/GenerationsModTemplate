@@ -4,6 +4,7 @@ plugins {
     id("architectury-plugin") version "3.4-SNAPSHOT"
     id("dev.architectury.loom") version "1.7-SNAPSHOT" apply false
     id("com.github.johnrengelman.shadow") version "8.1.1" apply false
+    kotlin("jvm") version "2.0.20"
     java
     idea
     `maven-publish`
@@ -21,6 +22,7 @@ subprojects {
     apply(plugin = "dev.architectury.loom")
     apply(plugin = "architectury-plugin")
     apply(plugin = "maven-publish")
+    apply(plugin = "org.jetbrains.kotlin.jvm")
 
     base.archivesName.set(project.properties["archives_base_name"] as String + "-${project.name}")
 
