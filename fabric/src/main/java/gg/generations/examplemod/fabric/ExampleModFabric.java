@@ -1,6 +1,6 @@
-package com.example.examplemod.fabric;
+package gg.generations.examplemod.fabric;
 
-import com.example.examplemod.ExampleMod;
+import gg.generations.examplemod.ExampleMod;
 import net.fabricmc.api.ModInitializer;
 
 /**

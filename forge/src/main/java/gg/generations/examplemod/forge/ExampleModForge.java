@@ -1,6 +1,6 @@
-package com.example.examplemod.forge;
+package gg.generations.examplemod.forge;
 
-import com.example.examplemod.ExampleMod;
+import gg.generations.examplemod.ExampleMod;
 import net.minecraftforge.fml.common.Mod;
 
 /**

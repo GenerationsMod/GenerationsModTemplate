@@ -1,6 +1,6 @@
-package com.example.examplemod.forge.datagen;
+package gg.generations.examplemod.forge.datagen;
 
-import com.example.examplemod.ExampleMod;
+import gg.generations.examplemod.ExampleMod;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;

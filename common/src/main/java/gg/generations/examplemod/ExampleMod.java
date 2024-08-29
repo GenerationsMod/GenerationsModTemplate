@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package gg.generations.examplemod;
 
 import com.mojang.logging.LogUtils;
 import org.slf4j.Logger;

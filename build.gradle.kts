@@ -36,6 +36,9 @@ subprojects {
         maven("https://maven.fabricmc.net/")
         maven("https://maven.minecraftforge.net/")
         maven("https://maven.neoforged.net/releases/")
+        maven("https://maven.generations.gg/snapshots")
+        maven("https://maven.generations.gg/releases")
+        maven("https://maven.impactdev.net/repository/development/")
     }
 
     @Suppress("UnstableApiUsage")
